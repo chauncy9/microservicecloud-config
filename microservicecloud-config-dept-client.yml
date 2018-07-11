@@ -35,7 +35,7 @@ eureka:
     prefer-ip-address: true
     
 info: 
-  app.name: atguigu-microservicecloud
+  app.name: atguigu-microservicecloud-springcloudconfig01
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -49,7 +49,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB01
+    url: jdbc:mysql://localhost:3306/cloudDB02
     username: root
     password: 123456
     dbcp2:
@@ -68,11 +68,11 @@ eureka:
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: dept-8001.com
+    instance-id: dept-8002.com
     prefer-ip-address: true
     
 info: 
-  app.name: atguigu-microservicecloud
+  app.name: atguigu-microservicecloud-springcloudconfig02
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
